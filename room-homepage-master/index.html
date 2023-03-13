@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <script src="assets/js/script.js" defer></script>
+    <title>Frontend Mentor | Room homepage</title>
+  </head>
+  <body>
+    <nav class="nav">
+      <img
+        class="nav__menu-btn"
+        src="assets/images/icon-hamburger.svg"
+        alt="icon-hamburger"
+      />
+      <img class="logo" src="assets/images/logo.svg" alt="logo" />
+      <div class="nav__list">
+        <img
+          class="nav__close-btn"
+          src="assets/images/icon-close.svg"
+          alt="icon-close"
+        />
+        <li class="nav__list-item"><a href="#">Home</a></li>
+        <li class="nav__list-item"><a href="#">Shop</a></li>
+        <li class="nav__list-item"><a href="#">About</a></li>
+        <li class="nav__list-item"><a href="#">Contact</a></li>
+      </div>
+    </nav>
+    <main class="main">
+      <section class="section">
+        <div class="section__gallery">
+          <div class="section__navigator">
+            <img
+              class="navigator__arrow navigator__arrow--left"
+              src="assets/images/icon-angle-left.svg"
+              alt="left-arrow"
+            />
+            <img
+              class="navigator__arrow navigator__arrow--right"
+              src="assets/images/icon-angle-right.svg"
+              alt="right-arrow"
+            />
+          </div>
+          <picture>
+            <source
+              media="(max-width: 768px  )"
+              srcset="assets/images/mobile-image-hero-1.jpg"
+            />
+            <img
+              class="section__gallery-img section__gallery-img--current"
+              src="assets/images/desktop-image-hero-1.jpg"
+              alt="img-1"
+            />
+          </picture>
+          <picture>
+            <source
+              media="(max-width: 768px )"
+              srcset="assets/images/mobile-image-hero-2.jpg"
+            />
+            <img
+              class="section__gallery-img"
+              src="assets/images/desktop-image-hero-2.jpg"
+              alt="img-1"
+            />
+          </picture>
+          <picture>
+            <source
+              media="(max-width: 768px )"
+              srcset="assets/images/mobile-image-hero-3.jpg"
+            />
+            <img
+              class="section__gallery-img"
+              src="assets/images/desktop-image-hero-3.jpg"
+              alt="img-1"
+            />
+          </picture>
+        </div>
+        <div class="section__description">
+          <div class="section__description-content">
+            <h1 class="section__description-title">
+              Discover innovative ways to decorate
+            </h1>
+            <p class="section__description-text">
+              We provide unmatched quality, comfort, and style for property
+              owners across the country. Our experts combine form and function
+              in bringing your vision to life. Create a room in your own style
+              with our collection and make your property a reflection of you and
+              what you love.
+            </p>
+          </div>
+          <button class="section__shop-button">Shop now</button>
+        </div>
+        <img src="assets/images/image-about-dark.jpg" alt=about-image-left"
+        class="section__about-image section__about-image--left">
+        <div class="section__about">
+          <h2 class="section__about-title">About our furniture</h2>
+          <p class="section__about-description">
+            Our multifunctional collection blends design and function to suit
+            your individual taste. Make each room unique, or pick a cohesive
+            theme that best express your interests and what inspires you. Find
+            the furniture pieces you need, from traditional to contemporary
+            styles or anything in between. Product specialists are available to
+            help you create your dream space.
+          </p>
+        </div>
+        <img src="assets/images/image-about-light.jpg" alt=about-image-right"
+        class="section__about-image section__about-image--right">
+      </section>
+    </main>
+  </body>
+</html>
